@@ -59,6 +59,12 @@ public class UserController {
         return map;
     }
 
+    /**
+     * 仅作参考使用：一般都用不到，一般都不会在选择玩文件之后就上传，
+     *  而是选择上传文件以及填写一些数据之后，一起封装在formData中上传到后端服务器，应参考下面（ uploadWord）的 例子。
+     * @param file
+     * @return
+     */
     @RequestMapping("/uploadWord")
     public Result uploadWord(@RequestParam("file") MultipartFile file){
         Result result = new Result();
@@ -69,7 +75,6 @@ public class UserController {
     }
 
     /**
-     * 使用form表单提交的数据在后端接收
      * 使用form表单提交的数据在后端接收
      * @param name
      * @param files
