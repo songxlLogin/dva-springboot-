@@ -15,4 +15,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Request {
     private String id;
+    private String name;
+    private String fileName;
 }
