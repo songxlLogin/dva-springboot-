@@ -84,6 +84,7 @@ public class UserController {
     public Result uploadWord( @RequestParam("name")String name,@RequestParam("files") MultipartFile[] files){
         Result result = new Result();
         System.out.println("request name:"+name);
+        System.out.println("request files:"+files.length);
         if(files.length>0){
             String originalFilename = files[0].getOriginalFilename();
             System.out.println(originalFilename);
