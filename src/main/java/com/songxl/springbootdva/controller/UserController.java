@@ -30,7 +30,7 @@ public class UserController {
 
     @RequestMapping("/queryAll")
     public List<UserDO> queryUser(){
-        System.out.println("come in sxl...");
+//        System.out.println("come in sxl...");
         return userService.queryAll();
     }
 
