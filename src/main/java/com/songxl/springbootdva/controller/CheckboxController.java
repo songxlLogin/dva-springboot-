@@ -21,7 +21,7 @@ public class CheckboxController {
     @RequestMapping("/single")
     public Result test(HttpServletRequest request){
         String name = request.getParameter("name");
-        System.out.println("receive:"+name);
+//        System.out.println("receive:"+name);
         Result result = new Result();
         result.setSuccess(true);
         return result;
